@@ -80,7 +80,7 @@ class MainActivity : AppCompatActivity(),CategoryRVAdapter.CatogeryClickInterfac
 
     }
     private fun getWallpaperByCategory(retrofitAPI: RetrofitAPI,category:String){
-     var call: Call<WallpaperRVModel>? = null
+     var call: Call<WallpaperRVModel>?= null
         if (category.isNotEmpty()){
             call = retrofitAPI.getWallpaperByCatogery(category,30,1)
         }else{
